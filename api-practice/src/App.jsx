@@ -36,4 +36,49 @@ function App() {
 
 
 
+
 export default App
+/*
+Lessons :
+useEffect
+
+first import it from react
+>> import { useEffect } from 'react'
+
+under the App function in the define it
+
+>> const useEffect(()=>(),[])
+
+now we need to use axios to get the data from the API
+
+You'll need to install the axios on from the terminal so you can import it first
+
+on the terminal : npm install axios
+
+then in the App.jsx (The folder we are codding in) import axios
+
+>> import axios from 'axios'
+
+use the axios.get() inside the useEffect to load all the data we get from the API 
+
+>> const useEffect(() => (
+  
+    axios.get('https:www.somethingAPI.com/get/V1')
+    .then((response) => {
+      do what ever here 
+    }
+    .catch((error) => {
+      do something when an error is returned
+    }
+    )
+  )
+),[])
+
+now to save the data we can use a defined 'useState' as an array (because the data we are getting from the API will be objects
+  so we will save them as Array of objects)
+
+  using the useState method save the data we get from the API to store it in it at the .then part.
+
+
+  to render the date we get we can use the map function to iterate through the array and access the needed data from there
+*/
