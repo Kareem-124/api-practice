@@ -81,4 +81,6 @@ now to save the data we can use a defined 'useState' as an array (because the da
 
 
   to render the date we get we can use the map function to iterate through the array and access the needed data from there
+
+  NOTE!! : the map functions need to have a 'return' if we use {}
 */
